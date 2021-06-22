@@ -1,7 +1,7 @@
 function Header() {
     return (
-        <div className="header flex justify-center pt-10">
-            <p className="font-mono text-6xl cursor-pointer">QUOTES</p>
+        <div className="flex justify-center pt-10 sticky top-0">
+            <p className="font-mono text-6xl cursor-pointer text-gray-400">QUOTES</p>
         </div>
     )
 }
