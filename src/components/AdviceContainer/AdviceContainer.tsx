@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { useEffect } from 'react'
 
 import { getAdvice } from 'store/actions'
 import Advice from 'components/Advice/Advice';
@@ -13,9 +12,6 @@ function AdviceContainer(props: any) {
     const handleGetAdvice = () => {
         getAdvice();
     }
-
-    useEffect(() => {
-    }, [status])
 
     const renderAdvice = () => advices.map((item: AdviceInterface) => <Advice advice={item.slip.advice} key={item.slip.id} />)
 
