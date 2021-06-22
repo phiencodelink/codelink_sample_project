@@ -7,7 +7,7 @@ interface AdviceProps {
 const Advice: React.FC<AdviceProps> = (props: AdviceProps) => {
     const { advice } = props;
     return (
-        <div>
+        <div className="text-3xl">
             {advice}
         </div>
     )

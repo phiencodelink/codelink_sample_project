@@ -3,10 +3,8 @@ import { Dispatch } from 'redux'
 import axios from 'axios';
 
 export const getAdvice = () => async (dispatch: Dispatch) => {
-    console.log('action')
     try {
         getAdviceRequest(dispatch);
-        console.log('hi')
         const advice = await axios.get("/advice");
         getAdviceSuccess(dispatch, advice.data);
     } catch (error) {
