@@ -1,10 +1,7 @@
-import React from 'react';
-import headerLogo from 'assets/images/header-logo.png';
-
 function Header() {
     return (
-        <div className="header">
-            <img src={headerLogo} alt="header-logo" />
+        <div className="header flex justify-center pt-10">
+            <p className="font-mono text-6xl cursor-pointer">QUOTES</p>
         </div>
     )
 }
